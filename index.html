@@ -9,12 +9,33 @@
     
     <script>
 
-        fetch('https://swapi.py4e.com/api/people/1')
-            .then(r => r.json())
-            .then(data => {
-                console.log(data)
-            })
-            .catch(e => { console.log(e) })
+        // fetch('https://swapi.py4e.com/api/people/1')
+        //     .then(r => r.json())
+        //     .then(data => {
+        //         console.log(data)
+        //     })
+        //     .catch(e => { console.log(e) })
+
+        // fetch('https://api.kanye.rest')
+        //     .then(r => r.json())
+        //     .then(data => {
+        //         console.log(data)
+        //     })
+        //     .catch(e => { console.log(e) })
+
+        // fetch('https://cat-fact.herokuapp.com/facts')
+        //     .then(r => r.json())
+        //     .then(data => {
+        //         console.log(data)
+        //     })
+        //     .catch(e => { console.log(e) })
+
+            fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=medium')
+                .then(r => r.json())
+                .then(data => {
+                    console.log(data)
+                })
+                .catch(e => { console.log(e) })
 
     </script>
 </body>
